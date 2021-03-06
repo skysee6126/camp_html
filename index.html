@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fd2b5ccd32.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+    <title>Moving Checklist</title>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="nav_logo">
+            <i class="fas fa-box-open"></i><a href="#"> 引越しのチェックリスト</a>
+        </div>
+        <div class="nav_menu">
+            <div class="menu-select">
+                <img src="https://cdn.pixabay.com/photo/2020/07/07/09/34/houses-5379921_960_720.jpg" alt="">
+                <a href="#plan" class="list">計画段階</a>
+            </div>
+            <div class="menu-select">
+                <img src="https://media.istockphoto.com/photos/cropped-image-of-a-woman-packing-shes-moving-out-from-old-apartment-picture-id1186745524?b=1&k=6&m=1186745524&s=170667a&w=0&h=Pay_oGguOJPI18EggmcISAN4NTEIrNnfaNkj8xyS47U=" alt="">
+                <a href="#before" class="list">契約後</a>
+            </div>
+            <div class="menu-select">
+                <img src="https://cdn.pixabay.com/photo/2016/11/19/00/17/broom-1837434__340.jpg" alt="">
+                <a href="#before2" class="list">入居前</a>
+            </div>
+            <div class="menu-select">
+                <img src="https://images.unsplash.com/photo-1552047876-19444784971e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzF8fGNpdHklMjBvZmZpY2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                <a href="#after" class="list">引っ越し後</a>
+            </div>
+        </div>
+        <div class="nav_hamburger">
+            <a href="#nav_menu">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+<a name="plan"></a>
+<div class="content">
+    <div class="plan">
+        <h2><i class="fas fa-angle-right"></i> 計画（内見のコツ）</h2>
+        <img src="https://cdn.pixabay.com/photo/2020/07/07/09/34/houses-5379921_960_720.jpg" alt="">
+        <p>(参考：<a href="https://offer.able.co.jp/oshieteagent/room/zadankai/">エイブル</a>)</p>
+        <input 
+            type='checkbox'
+            name='checkall' 
+            value='selectall'
+            onclick='selectAll(this)'
+        /> 
+        <b>Select All</b>
+    </div>
+    <hr noshade>
+    <a name="before"></a>
+    <div class="before">
+        <h2><i class="fas fa-angle-right"></i> 契約後</h2>
+        <a name="before2"></a>
+        <img src="https://media.istockphoto.com/photos/cropped-image-of-a-woman-packing-shes-moving-out-from-old-apartment-picture-id1186745524?b=1&k=6&m=1186745524&s=170667a&w=0&h=Pay_oGguOJPI18EggmcISAN4NTEIrNnfaNkj8xyS47U=" alt="">
+        <p>(参考：<a href="https://www.hikkoshi-line.com/navi/decision/to-do.html#h3-01">引越しれんらく帳帳</a>)</p>
+        <input 
+            type='checkbox'
+            name='check2all' 
+            value='selectall2'
+            onclick='selectAll2(this)'
+        /> 
+        <b>Select All</b>
+    </div>
+    <hr noshade>
+    
+    <div class="before2">
+        <h2><i class="fas fa-angle-right"></i> 入居前(掃除系)</h2>
+        <img src="https://cdn.pixabay.com/photo/2016/11/19/00/17/broom-1837434__340.jpg" alt="">
+        <p>(参考：<a href="https://xn--t8j0a7bp8j5b2ipa02ammhd8d9149box5byfk.com/8647.html">後悔しないおしゃれな一戸建てを建てるためのブログ☆</a>)</p>
+        <input 
+            type='checkbox'
+            name='check3all' 
+            value='selectall3'
+            onclick='selectAll3(this)'
+        /> 
+        <b>Select All</b>
+    </div>
+    <a name="after"></a>
+    <hr noshade>
+
+    <div class="after">
+        <h2><i class="fas fa-angle-right"></i> 引っ越し後</h2>
+        <img src="https://images.unsplash.com/photo-1552047876-19444784971e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzF8fGNpdHklMjBvZmZpY2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        <p>(参考：<a href="https://hikkoshizamurai.jp/useful/procedure/">引越し見積もり 引越し侍</a>)</p>
+        <input 
+            type='checkbox'
+            name='check4all' 
+            value='selectall4'
+            onclick='selectAll4(this)'
+        /> 
+        <b>Select All</b>
+    </div>
+</div>
+
+<footer>
+<p>Moving checklist</p>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</body>
+</html>
